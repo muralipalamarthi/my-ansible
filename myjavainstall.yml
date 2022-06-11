@@ -6,4 +6,4 @@
       apt:
          name: "{{myjavapackonubuntu}}"
          state: present
-      when: ansible_os-family =="Debian"
+      when: ansible_os-family=="Debian"
