@@ -8,6 +8,7 @@
       name: "{{mywebpackonubuntu}}"
       state: present
     when: ansible_os_family=="Debian"
+
   - name: start webserver on ubuntu
     service:
           name: "{{mywebpackonubuntu}}"
@@ -22,6 +23,6 @@
 
   - name: start webserver on redhat
     service: 
-         name: http"{{mywebpackonredhat}}"
+         name: "{{mywebpackonredhat}}"
          status: started
     when: ansible_os_family=="RedHat"
