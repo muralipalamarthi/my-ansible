@@ -15,7 +15,7 @@
       apt:
         name: git
         state: present
-     when: myfirsttaskresult.stderr==""
+      when: myfiirsttaskresult.stderr==""
 
     - name: install tree
       apt: 
