@@ -15,10 +15,10 @@
       apt:
         name: git
         state: present
-      when: myfiirsttaskresult.stderr==""
+      when: myfiirsttaskresult.stderr ==""
 
     - name: install tree
       apt: 
         name: tree
         state: present
-      when: myfirsttaskresult.stderr!=""
+      when: myfirsttaskresult.stderr !=""
